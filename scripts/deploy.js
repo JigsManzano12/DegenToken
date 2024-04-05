@@ -1,20 +1,32 @@
-const hre = require("hardhat");
+const { ethers } = require("hardhat");
 
 async function main() {
-  // Get the Points smart contract
-  const Degen = await hre.ethers.getContractFactory("DegenToken");
+  // Get the DegenToken smart contract factory
+  const DegenToken = await ethers.getContractFactory("DegenToken");
 
-  // Deploy it
-  const degen = await Degen.deploy();
-  await degen.deployed();
+  // Deploy the contract
+  const degenToken = await DegenToken.deploy();
+  await degenToken.deployed();
 
   // Display the contract address
-  console.log(`Degen token deployed to ${degen.address}`);
+  console.log("DegenToken deployed to:", degenToken.address);
+
+  // Get the owner address
+  const owner = await degenToken.owner();
+  console.log("Owner address:", owner.toString());
+
+  // Mint tokens to the owner
+  const amountToMint = ethers.utils.parseEther("1000000"); // Mint 1 million tokens
+  await degenToken.mint(owner, amountToMint);
+  console.log("Minted 1 million Degen tokens to owner.");
 }
 
-// Hardhat recommends this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+// Execute the main function
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+
+module.exports = main; // Export the main function
