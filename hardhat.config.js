@@ -24,21 +24,22 @@ module.exports = {
       gasPrice: 225000000000,
       chainId: !forkingData ? 43112 : undefined, //Only specify a chainId if we are not forking
       forking: forkingData,
+      ens:false
     },
     fuji: {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
       gasPrice: 225000000000,
       chainId: 43113,
-      accounts: [process.env.WALLET_PRIVATE_KEY], // we use a .env file to hide our wallets private key
+      accounts: [], // No accounts needed for local testing
     },
     mainnet: {
       url: "https://api.avax.network/ext/bc/C/rpc",
       gasPrice: 225000000000,
       chainId: 43114,
-      accounts: [process.env.WALLET_PRIVATE_KEY],
+      accounts: [], // No accounts needed for local testing
     },
   },
   etherscan: {
-    apiKey: process.env.SNOWTRACE_API_KEY, // we use an .env file to hide our Snowtrace API KEY
+    apiKey: process.env.SNOWTRACE_API_KEY, // Add your Snowtrace API Key here
   },
 };
