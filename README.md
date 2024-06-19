@@ -53,8 +53,7 @@ If you encounter any issues or need assistance, feel free to reach out to the co
 
 ## Authors
 
-JOHN AUDREY L. CANSINO
-[John Cansino](https://www.facebook.com/cansinojohn)
+Gerard Jose L. Manzano
 
 ## License
 
