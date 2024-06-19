@@ -27,12 +27,10 @@ npx hardhat run scripts/deploy.js
 ```
 ### Mint new tokens
 ```
-
 npx hardhat run scripts/mint.js
 ```
 ### Transfer tokens to another address
 ```
-
 npx hardhat run scripts/transfer.js
 ```
 ### Burn tokens
@@ -41,7 +39,6 @@ npx hardhat run scripts/burn.js
 ```
 ### Check the owner's balance
 ```
-
 npx hardhat run scripts/balance.js
 ```
 ### Redeem tokens for in-game items
