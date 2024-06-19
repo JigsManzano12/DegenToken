@@ -21,6 +21,11 @@ However, you may need to interact with the token using a compatible wallet or th
 
 To interact with the Degen Gaming Token, you can deploy smart contracts, call functions, or use wallets compatible with the Avalanche network.
 
+After cloning the repository for Gitpod, follow these steps to run all the scripts:
+
+1. Open your terminal in Gitpod.
+2. Run the following commands sequentially to interact with the token:
+
 ### Deploy the Degen Gaming Token contract
 ```
 npx hardhat run scripts/deploy.js
