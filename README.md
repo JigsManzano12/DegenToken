@@ -9,7 +9,6 @@ The Degen Gaming Token is an ERC-20 token deployed on the Avalanche blockchain f
 - **Enhanced Player Engagement**: Boosts engagement and retention with tangible rewards.
 
 
-
 ## Getting Started
 
 ### Installing
@@ -30,26 +29,32 @@ After cloning the repository for Gitpod, follow these steps to run all the scrip
 ```
 npx hardhat run scripts/deploy.js
 ```
+This command deploys the smart contract for the Degen Gaming Token on the Avalanche blockchain. It initializes the token and makes it ready for use within the Degen Gaming ecosystem.
 ### Mint new tokens
 ```
 npx hardhat run scripts/mint.js
 ```
+This command mints new Degen Gaming Tokens. Minting means creating new tokens and adding them to the total supply. It's typically used to generate tokens for distribution or rewards.
 ### Transfer tokens to another address
 ```
 npx hardhat run scripts/transfer.js
 ```
+This command transfers Degen Gaming Tokens from one address to another on the Avalanche blockchain. It allows users to send tokens to different addresses, facilitating transactions and exchanges within the game ecosystem.
 ### Burn tokens
 ```
 npx hardhat run scripts/burn.js
 ```
+This command burns (destroys) Degen Gaming Tokens from the total supply. Burning tokens reduces the total number in circulation permanently, often used to manage token supply or as part of token economics.
 ### Check the owner's balance
 ```
 npx hardhat run scripts/balance.js
 ```
+This command checks the balance of Degen Gaming Tokens owned by the contract owner or a specified address. It provides visibility into how many tokens an address holds at a given time.
 ### Redeem tokens for in-game items
 ```
 npx hardhat run scripts/redeem.js
 ```
+This command allows users to redeem Degen Gaming Tokens for in-game items or rewards from a designated store. It facilitates the exchange of tokens for tangible benefits within the Degen Gaming ecosystem.
 
 ## Help
 
