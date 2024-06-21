@@ -35,11 +35,6 @@ This command deploys the smart contract for the Degen Gaming Token on the Avalan
 npx hardhat run scripts/mint.js
 ```
 This command mints new Degen Gaming Tokens. Minting means creating new tokens and adding them to the total supply. It's typically used to generate tokens for distribution or rewards.
-### Transfer tokens to another address
-```
-npx hardhat run scripts/transfer.js
-```
-This command transfers Degen Gaming Tokens from one address to another on the Avalanche blockchain. It allows users to send tokens to different addresses, facilitating transactions and exchanges within the game ecosystem.
 ### Burn tokens
 ```
 npx hardhat run scripts/burn.js
@@ -55,6 +50,11 @@ This command checks the balance of Degen Gaming Tokens owned by the contract own
 npx hardhat run scripts/redeem.js
 ```
 This command allows users to redeem Degen Gaming Tokens for in-game items or rewards from a designated store. It facilitates the exchange of tokens for tangible benefits within the Degen Gaming ecosystem.
+### Transfer tokens to another address
+```
+npx hardhat run scripts/transfer.js
+```
+This command transfers Degen Gaming Tokens from one address to another on the Avalanche blockchain. It allows users to send tokens to different addresses, facilitating transactions and exchanges within the game ecosystem.
 
 ## Help
 
