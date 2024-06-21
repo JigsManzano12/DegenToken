@@ -6,7 +6,7 @@ The Degen Gaming Token is an ERC-20 token deployed on the Avalanche blockchain f
 
 - **Reward System**: Earn tokens for achievements and activities in Degen Gaming's games.
 - **In-game Transactions**: Exchange tokens for in-game items and rewards.
-- **Exclusive Redemptions: Redeem tokens for special items, including select weapons from the Lord of the Rings series.
+- **Exclusive Redemptions**: Redeem tokens for special items, including select weapons from the Lord of the Rings series.
 - **Enhanced Player Engagement**: Boosts engagement and retention with tangible rewards.
 
 
