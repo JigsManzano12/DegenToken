@@ -5,10 +5,29 @@ async function main() {
   const degenToken = await DegenToken.deploy();
   await degenToken.deployed();
 
-  const amountToRedeem = ethers.utils.parseEther("100");
-  await degenToken.redeem(amountToRedeem);
+  const swords = [
+    "Longclaw",
+    "Ice",
+    "Oathkeeper",
+    "Widow's Wail",
+    "Heartsbane",
+    "Dawn",
+    "Blackfyre",
+    "Dark Sister",
+    "Needle",
+    "Lightbringer"
+  ];
 
-  console.log("Tokens redeemed successfully.");
+  const randomSword = swords[Math.floor(Math.random() * swords.length)];
+
+  async function redeemTokenForSword(tokenAmount, sword) {
+    console.log(`Attempting to redeem ${ethers.utils.formatEther(tokenAmount)} tokens for ${sword}...`);
+    await degenToken.redeem(tokenAmount);
+    console.log(`Successfully redeemed ${ethers.utils.formatEther(tokenAmount)} tokens for ${sword}.`);
+  }
+
+  const amountToRedeem = ethers.utils.parseEther("100");
+  await redeemTokenForSword(amountToRedeem, randomSword);
 }
 
 main()
